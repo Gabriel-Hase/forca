@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\forca.ativ_pa\forca\bin\forca\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3029297564.index
+1084336406.index

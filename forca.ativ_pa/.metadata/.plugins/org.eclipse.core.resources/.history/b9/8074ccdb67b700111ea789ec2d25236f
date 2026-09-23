@@ -1,0 +1,33 @@
+package forca;
+
+import javax.swing.JOptionPane;
+
+public class forca_for {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 String palavra[] = new String [3]; 
+		 String ten;
+		 
+		
+		 for (int c=0; c<=3; c++) {
+				
+				palavra[c] = JOptionPane.showInputDialog("Digite uma palavra com 4 letras: ");
+				
+				for(int c2=0; c2<=6; c2++) {
+					
+					ten= JOptionPane.showInputDialog("Digite uma palavra, ela contém 4 letras.");
+					
+				}
+		
+		 
+
+			
+			
+		 }
+			 
+		
+	}}
+
+
