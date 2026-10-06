@@ -1,0 +1,48 @@
+package forca_corre;
+import javax.swing.JOptionPane;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String letras="";
+		String tent="";
+		
+		int tampal=0;
+		
+		tampal = Integer.parseInt(JOptionPane.showInputDialog("Quantas letras a palavra terá"));
+		String palavra [] = new String [tampal];
+		String continuar="";
+		
+		do {
+			for (int contador=0; contador < tampal; contador++) {
+				
+				palavra [contador] = JOptionPane.showInputDialog("Informe as letras que formama palavra a serdescoberta");
+				
+				letras = letras + palavra [contador];
+			}
+		
+		JOptionPane.showMessageDialog(null, "A palavra informada foi: " + letras);
+		
+		for (int contador=0; contador < 7; contador++) {
+			palavra [contador] = JOptionPane.showInputDialog("Tente advinhar a palavra, ela tem" + tampal + "letras.");
+			
+			if (palavra[contador].equals(letras)) {
+				JOptionPane.showMessageDialog(null, "Você acertou uma letra");
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "Você errou a letra");
+			}
+		}
+		
+		
+		continuar=JOptionPane.showInputDialog("Jogar novamente?"
+				+ "\nSIm"
+				+ "\nNão");
+		
+			}while(continuar.equals("Sim"));
+		
+		
+	}
+
+}
